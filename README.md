@@ -1,9 +1,28 @@
-# gui-app
+# Swing Doom GUI
 A Java Swing GUI for text-rendered Doom
 
 ---------------------------------------------------------------
 This is a GUI with an on-screen controller to play a text-rendered version of Doom. It has a configuration window to let you customize the position of the controller buttons, and you can save your configs to a file.
 
+------------------
+Prerequisites
+----------------------
+Java 22 or higher
+- Make sure that the JAVA_HOME environment variable is set to the JDK 22 install path, and that the system PATH has "%JAVA_HOME%\bin" as an entry
+
+Maven
+
+
+Building and running
+----------------------
+- Download/clone the project
+
+- Compile it by running "mvn clean compile" in the project directory
+
+- Run it with "mvn exec:java"
+
+Using the app
+--------------
 When running the project, it opens a JFrame window with some drop down menus to select your config options, and buttons to save and load them. 
 - To save, you have to input a name into the text field at the top of the window and press save, and you can load that config by entering the same name that you saved it to. - You can have multiple configs saved at once, if they all have different names.
 - To overwrite a config, press save with the same name inputted.
